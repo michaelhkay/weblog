@@ -2,14 +2,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>101 Things to Play With in QT4</title>
+        <title>101 Fun things to do with QT4</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="author" content="Michael Kay" />
         <meta name="pubdate" content="2026-05-26T18:00:00" />
 
     </head>
     <body>
-        <h1>101 Things to Play With in QT4</h1>
+        <h1>101 Fun things to do with QT4</h1>
         
         <p>Here's a fun list of new features in the XPath 4.0, XQuery 4.0, and XSLT 4.0,
         that are available to play with in Saxon 13.</p>
@@ -95,7 +95,7 @@
             </li>
             <li>
                 <p>Convert untyped atomic values implicitly to decimal where appropriate</p>
-                <p><code><![CDATA[<a>1.1</a> = 1.1]]></code></p>
+                <p><code>&lt;a>1.1&lt;/a> = 1.1</code></p>
             </li>
             
             <!-- 21 to 30 -->
@@ -305,7 +305,7 @@
                 <p><code>&lt;xsl:choose>&lt;xsl:when test="@type=1" select="'gasket'"/>&lt;/xsl:choose></code></p>
             </li>
             <li>
-                <p>Use the new <code>xsl:switch</code> instruction</p>
+                <p>Select options using the new <code>xsl:switch</code> instruction</p>
                 <p><code>&lt;xsl:switch select="@type">&lt;xsl:when test="1" select="'gasket'"/>&lt;/xsl:switch></code></p>
             </li>
             
@@ -320,7 +320,7 @@
             </li>
             <li>
                 <p>Use <code>xsl:text</code> in preference to <code>xsl:value-of</code></p>
-                <p><code>&lt;xsl:text>{position()} of {last()}&lt;/xsl:text>]]></code></p>
+                <p><code>&lt;xsl:text>{position()} of {last()}&lt;/xsl:text></code></p>
             </li>
             <li>
                 <p>Construct CDATA sections selectively in serialized output</p>
@@ -362,7 +362,7 @@
             </li>
             <li>
                 <p>In an XSLT module, link to the main module to help IDEs locate all the variable and function declarations</p>
-                <p><code><![CDATA[<xsl:transform main-module="main.xsl">...</xsl:transform>]]></code></p>
+                <p><code>&lt;xsl:transform main-module="main.xsl">...&lt;/xsl:transform></code></p>
             </li>
             <li>
                 <p>Use <code>xsl:note</code> elements for structured XSLT documentation</p>
@@ -370,7 +370,7 @@
             </li>
             <li>
                 <p>Use <code>fixed-namespaces</code> to reduce the amount of boilerplate on the <code>xsl:transform</code> element</p>
-                <p><code>&lt;xsl:transform fixed-namespaces="#standard">...&lt;/xsl:transform>]]></code></p>
+                <p><code>&lt;xsl:transform fixed-namespaces="#standard">...&lt;/xsl:transform></code></p>
             </li>
             <li>
                 <p>Take advantage of new features for simplified stylesheets. The outermost element
