@@ -214,8 +214,8 @@ task publishWeblog(
   if (linkCheck) {
     doLast {
       exec {
-        commandLine pythonExecutable,
-          'bin/linkcheck.py', '--debug', '-s', 'build/docs'
+        commandLine(pythonExecutable,
+                    'bin/linkcheck.py', '--debug', '-s', 'build/docs')
       }
     }
   }
