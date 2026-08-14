@@ -38,9 +38,7 @@
         <p>I'll give you the answer first, before describing the journey to get there. I've made it work
         like this</p>
         
-        <xmp><![CDATA[
-            
-<xs:annotation>
+        <pre><code><![CDATA[<xs:annotation>
    <xs:appinfo>
        <saxon:param name="test-set-validator" 
                     select="xsd-validator(map{'schema-location': 'test-set-schema.xsd',
@@ -65,7 +63,7 @@
       </xs:extension>
     </xs:complexContent>                        
   </xs:complexType>
-</xs:element>]]></xmp>
+</xs:element>]]></code></pre>
         
         <p>This won't run out-of-the-box in Saxon 13.0: though most of the ingredients are present
         I had to make some tweaks to make it all hang together, which I'll describe as I go along.
